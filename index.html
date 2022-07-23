@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Intern Test 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="root">
+        <div id="nav">
+            <button class="button one" target="1">Layout 1</button>
+            <button class="button two" target="2">Layout 2</button>
+            <button class="button three" target="3">Layout 3</button>
+        </div>
+
+        <!--layout 1-->
+        <h1>Layout 1</h1>
+        <div class="container" id="container">
+            <div class="card">
+                <h2>Card 1</h2>
+            </div>
+            <div class="card">
+                <h2>Card 2</h2>
+            </div>
+            <div class="card">
+                <h2>Card 3</h2>
+            </div>
+            <div class="card">
+                <h2>Card 4</h2>
+            </div>
+            <div class="card">
+                <h2>Card 5</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!--layout 2-->
+
+    <h1>Layout 2</h1>
+    <div class="container-2" id="container-2">
+        <div class="flex-container">
+            <h2>Card 1</h2>
+        </div>
+        <div class="flex-container">
+            <h2>Card 2</h2>
+        </div>
+        <div class="flex-container">
+            <h2>Card 3</h2>
+        </div>
+        <div class="flex-container">
+            <h2>Card 4</h2>
+        </div>
+        <div class="flex-container">
+            <h2>Card 5</h2>
+        </div>
+    </div>
+
+    <!--layout 3-->
+
+    <h1>Layout 3</h1>
+    <div class="container-3" id="container-3">
+        <div class="card" id="card1">
+            <h2>Card 1</h2>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card 2</h2>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card 4</h2>
+        </div>
+        <div class="card" id="card5">
+            <h2>Card 5</h2>
+        </div>
+    </div>
+
+
+
+    
+<!--Only JS-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+$(document).ready(function() {
+    $(".one").click(function() {
+        $(".container-2,.container-3").hide();
+    });
+    $(".two").click(function() {
+        $("#container,.container-3").hide();
+    });
+    $(".three").click(function() {
+        $("#container,.container-2").hide();
+    });
+});
+
+
+
+/*jQuery(function() {
+
+    jQuery(".one").click(function() {
+        jQuery(".flex-container,.container-3").hide();
+        jQuery("#container" + $(this).attr('target')).show();
+
+
+    });
+    jQuery(".two").click(function() {
+        jQuery(".card,.container-3").hide();
+        jQuery("#container-2" + $(this).attr('target')).show();
+
+
+    });
+    jQuery(".three").click(function() {
+        jQuery("#container,.container-2").hide();
+        jQuery("#container-3" + $(this).attr('target')).show();
+
+
+    });
+});*/
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 2%;
+}
+
+:root {
+    --light-grey: #e0e0e0;
+    --dark-grey: #606060;
+    --red-bg: #da1e5d;
+}
+
+#nav {
+    margin-left: 1%;
+}
+
+
+/*layout 1*/
+
+.card {
+    background-color: #da1e5d;
+    color: white;
+    text-align: center;
+    padding: 2% 0% 2%;
+    margin: 1%;
+    border-radius: 12px;
+}
+
+
+/*
+ .flex-container {
+    background-color: #da1e5d;
+    color: white;
+    text-align: center;
+    padding: 7% 0% 7%;
+    margin: 1%;
+    border-radius: 12px;
+    width: 30%;
+    display: inline-block;
+}
+ */
+
+
+/*layout 2*/
+
+.container-2 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-container {
+    background-color: #da1e5d;
+    color: white;
+    text-align: center;
+    margin: 1%;
+    border-radius: 12px;
+    width: 30%;
+    padding: 7% 0 7%;
+}
+
+
+/*layout 3*/
+
+.container-3 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container-3 .card {
+    padding: 0;
+}
+
+#card1 {
+    width: 100%;
+    padding: 2% 0 2%;
+}
+
+#card2 {
+    order: 1;
+    flex: 1;
+    padding: 10% 0 10%;
+}
+
+#card3 {
+    order: 2;
+    flex: 3;
+    padding: 10% 0 10%;
+}
+
+#card4 {
+    order: 3;
+    flex: 1;
+    padding: 10% 0 10%;
+}
+
+#card5 {
+    order: 4;
+    width: 100%;
+    padding: 2% 0 2%;
+}
+
+
+/*button*/
+
+button {
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    color: #606060;
+    border: none;
+    width: 7%;
+    height: 40px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #606060;
+    color: #e0e0e0;
+}
